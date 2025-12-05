@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url("bg.jpg") center/cover no-repeat #030728;
+}
+
+
+#root {
+    width: 100%;
+}
+
+.currency-convertor {
+    margin: 0 auto;
+    padding: 40px 30px 50px;
+    border-radius: 8px;
+    max-width: 410px;
+    backdrop-filter: blur(30px);
+    background: rgba(2, 7, 40, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+.currency-convertor .convertor-title {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.currency-convertor .converter-form {
+    margin-top: 45px;
+}
+
+.converter-form .form-group {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.converter-form .form-group .form-label {
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 9px;
+    font-size: 1rem;
+}
+
+.converter-form .form-group .form-input {
+    min-height: 48px;
+    font-size: 1.1rem;
+    padding: 0 5px;
+    color: #fff;
+    font-weight: 500;
+    min-height: 48px;
+    border-radius: 6px;
+    background: rgba(2, 7, 40, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.converter-form .form-currency-group {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-currency-group .currency-select {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    min-height: 45px;
+    border-radius: 6px;
+    background: rgba(2, 7, 40, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.converter-form .currency-select img {
+    width: 25px;
+}
+
+.converter-form .currency-select .currency-dropdown {
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 10px 0 5px;
+}
+
+.converter-form .currency-select .currency-dropdown option {
+    color: #000;
+    font-weight: 500;
+}
+
+.form-currency-group .swap-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 25px;
+    cursor: pointer;
+    background: rgba(2, 7, 40, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.2s ease;
+}
+
+.form-currency-group .swap-icon:hover{
+    background: rgba(2, 7, 40, 0.3);
+}
+
+.converter-form .submit-button {
+    width:100%;
+    min-height: 52px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transition: 0.2s ease;
+}
+
+.converter-form .submit-button.loading{
+    opacity: 0.8;
+    pointer-events: none
+}
+
+.converter-form .submit-button:hover{
+    background: rgba(2, 7, 40, 0.8);
+}
+
+.converter-form .exchange-rate-result{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+     background: rgba(255, 255, 255, 0.15);
+     padding: 25px 0;
+     margin-top: 30px;
+     border-radius: 6px;
+     letter-spacing: 0.5px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--theme-toggle-border);
+    background: var(--theme-toggle-bg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--text-color);
+    transition: fill 0.3s ease;
+}
