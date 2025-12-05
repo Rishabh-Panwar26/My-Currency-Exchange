@@ -1,18 +1,34 @@
-# React + Vite
+# 🌍 Currency Converter — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, modern and beautifully designed **currency converter** built with **React + Vite**.
+My goal was simple: *convert currencies with the same smoothness as switching tabs.*
 
-Currently, two official plugins are available:
+## ✨ Highlights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* ⚡ **Ultra–fast** Vite-powered performance
+* 🎨 **Clean & minimal UI** focused on usability
+* 🌐 **Real-time exchange rates** from a free API 
+* 🎯 **Accurate & instant** conversion results
+* 📱 Fully responsive for all screen sizes
 
-## React Compiler
+## 🧠 Why I Built This
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+I wanted to create a project that feels **simple on the outside** but shows strong skills in
+API integration, state management, UI design, and React fundamentals.
 
-Note: This will impact Vite dev & build performances.
+## 🚀 Quick Start
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗️ Tech Stack
+
+React • Vite • JavaScript • Fetch API • Modern CSS
+
+
+---
+
+Thanks for checking out my project! 💙
+If you like it, feel free to ⭐ the repo.
