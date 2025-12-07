@@ -1,4 +1,0 @@
-- [ ] Add CSS media queries for mobile responsiveness (max-width: 768px): Adjust padding, font sizes, button sizes, make container full width on small screens
-- [ ] Modernize theme colors: Update gradients, backgrounds, borders to more vibrant and modern colors for both dark and light themes
-- [ ] Test mobile responsiveness: Resize browser window to mobile size and verify layout
-- [ ] Test theme toggle with new colors: Ensure modern colors look good in both themes
