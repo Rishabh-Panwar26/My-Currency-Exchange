@@ -26,13 +26,37 @@ body {
     border-radius: 8px;
     max-width: 410px;
     backdrop-filter: blur(30px);
-    background: rgba(2, 7, 40, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* Dark Theme */
+.currency-convertor.dark {
+    background: linear-gradient(135deg, rgba(18, 18, 18, 0.9), rgba(30, 30, 30, 0.9));
+    border: 1px solid rgba(138, 43, 226, 0.5);
+    --text-color: #ffffff;
+    --bg-color: linear-gradient(135deg, rgba(18, 18, 18, 0.9), rgba(30, 30, 30, 0.9));
+    --border-color: rgba(138, 43, 226, 0.5);
+    --input-bg: rgba(45, 45, 45, 0.8);
+    --result-bg: rgba(255, 255, 255, 0.1);
+    --theme-toggle-border: rgba(138, 43, 226, 0.5);
+    --theme-toggle-bg: linear-gradient(135deg, rgba(18, 18, 18, 0.9), rgba(30, 30, 30, 0.9));
+}
+
+/* Light Theme */
+.currency-convertor.light {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.95));
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    --text-color: #1f2937;
+    --bg-color: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.95));
+    --border-color: rgba(59, 130, 246, 0.3);
+    --input-bg: rgba(241, 245, 249, 0.9);
+    --result-bg: rgba(0, 0, 0, 0.05);
+    --theme-toggle-border: rgba(59, 130, 246, 0.3);
+    --theme-toggle-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.95));
+}
+
 .currency-convertor .convertor-title {
-    color: #fff;
+    color: var(--text-color);
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
@@ -49,7 +73,7 @@ body {
 }
 
 .converter-form .form-group .form-label {
-    color: #fff;
+    color: var(--text-color);
     font-weight: 500;
     display: block;
     margin-bottom: 9px;
@@ -60,7 +84,7 @@ body {
     min-height: 48px;
     font-size: 1.1rem;
     padding: 0 5px;
-    color: #fff;
+    color: var(--text-color);
     font-weight: 500;
     min-height: 48px;
     border-radius: 6px;
@@ -80,8 +104,8 @@ body {
     padding: 0 10px;
     min-height: 45px;
     border-radius: 6px;
-    background: rgba(2, 7, 40, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
 }
 
 .converter-form .currency-select img {
@@ -92,7 +116,7 @@ body {
     outline: none;
     border: none;
     background: none;
-    color: #fff;
+    color: var(--text-color);
     font-weight: 500;
     padding: 0 10px 0 5px;
 }
@@ -111,8 +135,8 @@ body {
     display: flex;
     margin-top: 25px;
     cursor: pointer;
-    background: rgba(2, 7, 40, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
     transition: 0.2s ease;
 }
 
@@ -144,7 +168,7 @@ body {
 }
 
 .converter-form .exchange-rate-result{
-    color: #fff;
+    color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
     text-align: center;
