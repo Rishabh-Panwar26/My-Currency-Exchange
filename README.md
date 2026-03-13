@@ -3,6 +3,8 @@
 A fast, modern and beautifully designed **currency converter** built with **React + Vite**.
 My goal was simple: *convert currencies with the same smoothness as switching tabs.*
 
+## This project not responsive in futher i can do t responsive
+
 ## ✨ Highlights
 
 * ⚡ **Ultra–fast** Vite-powered performance
